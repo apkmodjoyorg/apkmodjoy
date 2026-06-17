@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>APKMODJOY - Game & Aplikasi Android</title>
+  <meta name="description" content="Jelajahi game dan aplikasi Android terbaru dari APKMODJOY. Semua kartu mengarah langsung ke halaman resmi APKMODJOY.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://apkmodjoyorg.github.io/apkmodjoy/">
+  <link rel="icon" href="https://apkmodjoy.org/wp-content/uploads/2026/04/cropped-aapkmodjoy-favicon-1-32x32.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="APKMODJOY - Game & Aplikasi Android">
+  <meta property="og:description" content="Temukan koleksi game, aplikasi, pembaruan, dan panduan Android dari APKMODJOY.">
+  <meta property="og:url" content="https://apkmodjoyorg.github.io/apkmodjoy/">
+  <meta property="og:image" content="https://apkmodjoy.org/wp-content/uploads/2026/04/aapkmodjoy-favicon-1.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://apkmodjoyorg.github.io/apkmodjoy/#organization", "name": "APKMODJOY", "url": "https://apkmodjoy.org/", "logo": "https://apkmodjoy.org/wp-content/uploads/2026/04/cropped-aapkmodjoy-favicon-1.png", "email": "contact@apkmodjoy.org", "telephone": "+62 878-3395-9016", "sameAs": ["https://www.facebook.com/apkmodjoy.org1", "https://www.youtube.com/@JoyApkmod", "https://www.instagram.com/apkmodjoyorg", "https://www.tiktok.com/@apkmodjoy.org", "https://id.pinterest.com/apkmodjoyorg", "https://t.me/apkmodjoyorg", "https://x.com/apkmodjoyorg"]}, {"@type": "WebSite", "@id": "https://apkmodjoyorg.github.io/apkmodjoy/#website", "url": "https://apkmodjoyorg.github.io/apkmodjoy/", "name": "APKMODJOY", "publisher": {"@id": "https://apkmodjoyorg.github.io/apkmodjoy/#organization"}, "inLanguage": "id-ID"}]}</script>
+  <style>
+    :root {
+      --green:#50b848;
+      --green-dark:#278a31;
+      --ink:#252831;
+      --muted:#747986;
+      --line:#e8eaed;
+      --surface:#ffffff;
+      --soft:#f6f7f8;
+      --radius:16px;
+      --shadow:0 12px 35px rgba(28,36,43,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:#fff;
+      font-family:"Plus Jakarta Sans",Inter,Arial,sans-serif;
+      line-height:1.55;
+    }
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button,input{font:inherit}
+    .container{width:min(1160px,calc(100% - 32px));margin:auto}
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.96);
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(12px);
+    }
+    .header-inner{
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      gap:34px;
+    }
+    .brand img{width:180px;height:auto}
+    .main-nav{display:flex;align-items:center;gap:26px;font-weight:800;font-size:14px}
+    .main-nav a:hover{color:var(--green)}
+    .search{margin-left:auto;display:flex;width:min(350px,34vw)}
+    .search input{
+      width:100%;
+      border:1px solid var(--line);
+      border-right:0;
+      border-radius:11px 0 0 11px;
+      padding:11px 14px;
+      outline:none;
+      background:#fafafa;
+    }
+    .search input:focus{border-color:var(--green);background:#fff}
+    .search button{
+      border:0;
+      padding:0 18px;
+      border-radius:0 11px 11px 0;
+      color:white;
+      background:var(--green);
+      cursor:pointer;
+      font-weight:800;
+    }
+    .menu-toggle{display:none;margin-left:auto;border:1px solid var(--line);background:white;border-radius:9px;padding:9px 12px}
+    .hero{padding:52px 0 24px;text-align:center}
+    .hero h1{
+      max-width:900px;
+      margin:0 auto 14px;
+      color:var(--green);
+      font-size:clamp(30px,5vw,52px);
+      line-height:1.15;
+    }
+    .hero p{max-width:850px;margin:auto;color:#30343b;font-size:17px}
+    .hero-actions{display:flex;justify-content:center;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:0 20px;
+      border-radius:10px;
+      font-weight:800;
+      border:1px solid var(--line);
+    }
+    .btn-primary{background:var(--green);color:#fff;border-color:var(--green)}
+    .btn-light{background:#fff}
+    .section{padding:34px 0}
+    .section-soft{background:var(--soft)}
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:20px;
+      margin-bottom:20px;
+    }
+    .section-head h2{margin:0;color:var(--green-dark);font-size:28px}
+    .section-head p{margin:5px 0 0;color:var(--muted)}
+    .section-head>a{color:#2176ff;font-weight:800;white-space:nowrap}
+    .featured-track{
+      display:grid;
+      grid-auto-flow:column;
+      grid-auto-columns:minmax(320px,calc(50% - 8px));
+      gap:16px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      padding:4px 2px 12px;
+      scrollbar-width:thin;
+    }
+    .featured-card{
+      min-height:285px;
+      position:relative;
+      overflow:hidden;
+      border-radius:var(--radius);
+      scroll-snap-align:start;
+      background:#111;
+      box-shadow:var(--shadow);
+    }
+    .featured-card>a{display:block;height:100%}
+    .featured-card img{width:100%;height:285px;object-fit:cover;transition:transform .35s}
+    .featured-card:hover img{transform:scale(1.04)}
+    .image-shade{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,transparent 25%,rgba(0,0,0,.82) 100%);
+    }
+    .featured-copy{position:absolute;left:20px;right:20px;bottom:18px;color:white}
+    .featured-copy h3{font-size:22px;line-height:1.25;margin:0 0 8px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+    .featured-copy .meta{color:#fff}
+    .meta span+span:before{content:"•";margin-right:8px;color:var(--green)}
+    .categories{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+    .categories span{font-size:11px;background:#edf0f2;color:#535a64;padding:3px 7px;border-radius:6px}
+    .featured-copy .categories span{background:rgba(255,255,255,.9);color:#333}
+    .explore-grid,.popular-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .grid-card{
+      overflow:hidden;
+      border-radius:var(--radius);
+      background:white;
+      border:1px solid var(--line);
+      transition:.25s;
+    }
+    .grid-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .grid-image img{width:100%;aspect-ratio:16/9;object-fit:cover}
+    .grid-copy{padding:14px 15px 16px}
+    .grid-copy h3{font-size:17px;line-height:1.3;margin:0 0 8px}
+    .grid-copy h3:hover{color:var(--green)}
+    .apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 24px}
+    .app-card{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      transition:.2s;
+    }
+    .app-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+    .app-icon{flex:0 0 76px}
+    .app-icon img{width:76px;height:76px;border-radius:16px;object-fit:cover}
+    .app-copy{min-width:0}
+    .app-copy h3{
+      margin:0 0 5px;
+      font-size:15px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .app-copy h3:hover{color:var(--green)}
+    .updates-track{
+      display:grid;
+      grid-auto-flow:column;
+      grid-auto-columns:150px;
+      gap:16px;
+      overflow-x:auto;
+      padding:3px 2px 12px;
+      scroll-snap-type:x proximity;
+    }
+    .update-card{scroll-snap-align:start}
+    .update-card img{width:150px;height:150px;border-radius:17px;object-fit:cover;border:1px solid var(--line)}
+    .update-card h3{
+      margin:9px 0 3px;
+      font-size:14px;
+      line-height:1.35;
+      display:-webkit-box;
+      -webkit-line-clamp:2;
+      -webkit-box-orient:vertical;
+      overflow:hidden;
+    }
+    .update-card h3:hover{color:var(--green)}
+    .update-card p{font-size:12px;color:var(--muted);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .about{
+      padding:34px;
+      border-radius:20px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg,#f4fff1,#fff);
+    }
+    .about h2{margin-top:0;color:var(--green-dark)}
+    .about p{color:#4d535d}
+    .about-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .about-links a{padding:8px 12px;border-radius:999px;border:1px solid #d9e9d5;background:white;font-size:13px;font-weight:700}
+    .site-footer{margin-top:40px;background:#222;color:#d8d8d8}
+    .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px;padding:44px 0}
+    .footer-grid h3{margin-top:0;color:#fff}
+    .footer-grid p,.footer-grid li{font-size:14px;color:#bbb}
+    .footer-grid ul{list-style:none;padding:0;margin:0}
+    .footer-grid li{margin:8px 0}
+    .copyright{border-top:1px solid #393939;padding:18px 0;text-align:center;font-size:13px;color:#9f9f9f}
+    @media(max-width:900px){
+      .main-nav,.search{display:none}
+      .menu-toggle{display:block}
+      .main-nav.open{
+        display:flex;
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        padding:18px 20px;
+        background:white;
+        border-bottom:1px solid var(--line);
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .featured-track{grid-auto-columns:82%}
+      .explore-grid,.popular-grid{grid-template-columns:repeat(2,1fr)}
+      .apps-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .container{width:min(100% - 22px,1160px)}
+      .brand img{width:155px}
+      .hero{padding-top:35px}
+      .hero p{font-size:15px}
+      .featured-track{grid-auto-columns:92%}
+      .featured-card,.featured-card img{height:235px;min-height:235px}
+      .explore-grid,.popular-grid,.apps-grid{grid-template-columns:1fr}
+      .section{padding:28px 0}
+      .section-head{align-items:center}
+      .section-head h2{font-size:23px}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="https://apkmodjoy.org/" target="_blank" rel="noopener" aria-label="APKMODJOY">
+      <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/apkmodjoy-logo.png" alt="APKMODJOY">
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="https://apkmodjoy.org/" target="_blank" rel="noopener">BERANDA</a>
+      <a href="https://apkmodjoy.org/game/" target="_blank" rel="noopener">GAME</a>
+      <a href="https://apkmodjoy.org/app/" target="_blank" rel="noopener">APLIKASI</a>
+      <a href="https://apkmodjoy.org/topics/" target="_blank" rel="noopener">TOPICS</a>
+    </nav>
+    <form class="search" action="https://apkmodjoy.org/" method="get" target="_blank">
+      <input type="search" name="s" placeholder="Pencarian" aria-label="Cari di APKMODJOY">
+      <button type="submit">Cari</button>
+    </form>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>APKMODJOY – Gudang Game & Aplikasi Android</h1>
+      <p>Temukan game, aplikasi, pembaruan, dan panduan Android dari APKMODJOY. Setiap kartu di halaman ini terhubung langsung ke halaman asli di APKMODJOY.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://apkmodjoy.org/" target="_blank" rel="noopener">Kunjungi APKMODJOY</a>
+        <a class="btn btn-light" href="#jelajahi">Jelajahi Konten</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Pilihan Terbaru</h2>
+          <p>Geser untuk melihat lebih banyak game dan aplikasi.</p>
+        </div>
+      </div>
+      <div class="featured-track">
+        
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/farlight-84/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Farlight-84-mod-apk-1.jpg" alt="Farlight 84" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Farlight 84</h3>
+          <div class="meta"><span>2.11.0.0.1639369</span><span>Free</span></div>
+          <div class="categories"><span>Game</span><span>Aksi</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/blockman-go-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/hq720-2.jpg" alt="Blockman Go Mod APK 3.12.1" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Blockman Go Mod APK 3.12.1</h3>
+          <div class="meta"><span>3.12.1</span><span>Unlimited Money, Gcubes</span></div>
+          <div class="categories"><span>Game</span><span>Aksi</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/herex-simulator-indonesia-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/c9e2fc7ab6b47f9223213b85fe002c5dbae508ff7369ee9017534f563e97b6f7_600.webp" alt="Herex Simulator Indonesia MOD APK" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Herex Simulator Indonesia MOD APK</h3>
+          <div class="meta"><span>1.0.52</span><span>Unlimited Money, Gems</span></div>
+          <div class="categories"><span>Game</span><span>Racing</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/evertale-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/evertale-free.jpg" alt="Evertale MOD APK 2.0.100" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Evertale MOD APK 2.0.100</h3>
+          <div class="meta"><span>2.0.100</span><span>Unlimited Silvers Gratis</span></div>
+          <div class="categories"><span>Game</span><span>Aksi</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/netshort/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/NetShort-mod-apk-3.jpg" alt="NetShort" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>NetShort</h3>
+          <div class="meta"><span>2.2.2</span><span>Free</span></div>
+          <div class="categories"><span>Aplikasi</span><span>Hiburan</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/download-real-moto-2-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Real-Moto-2-mod-2-480x300-1.webp" alt="Real Moto 2 Mod APK" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Real Moto 2 Mod APK</h3>
+          <div class="meta"><span>1.2.785</span><span>Free</span></div>
+          <div class="categories"><span>Game</span><span>Racing</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/robbery-bob/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Robbery-Bob-Mod-APK-3.jpeg" alt="Robbery Bob" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Robbery Bob</h3>
+          <div class="meta"><span>1.35.1</span><span>Free</span></div>
+          <div class="categories"><span>Game</span><span>Aksi</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/naruto-senki-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/Fitur-Unggulan-Naruto-Senki-MOD.webp" alt="Naruto Senki Mod APK v1.27" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Naruto Senki Mod APK v1.27</h3>
+          <div class="meta"><span>1.27</span><span>Free</span></div>
+          <div class="categories"><span>Game</span><span>Aksi</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/stickman-the-flash/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Stickman-The-Flash-mod-apk.webp" alt="Stickman The Flash" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Stickman The Flash</h3>
+          <div class="meta"><span>1.78.26</span><span>Free</span></div>
+          <div class="categories"><span>Game</span></div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="featured-card">
+      <a href="https://apkmodjoy.org/omi-premium-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Download-Omi-Premium-MOD-APK-terbaru-Android.png" alt="Omi Premium MOD APK" loading="lazy">
+        <div class="image-shade"></div>
+        <div class="featured-copy">
+          <h3>Omi Premium MOD APK</h3>
+          <div class="meta"><span>v7.55.0</span><span>Free</span></div>
+          <div class="categories"><span>Aplikasi</span><span>Sosial</span></div>
+        </div>
+      </a>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="jelajahi">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Jelajahi</h2>
+          <p>Konten yang sedang diperbarui di APKMODJOY.</p>
+        </div>
+        <a href="https://apkmodjoy.org/" target="_blank" rel="noopener">Lihat Semua</a>
+      </div>
+      <div class="explore-grid">
+        
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/dragon-village-3-mod-apk-3.jpg" alt="Dragon Village 3" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+          <h3>Dragon Village 3</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Taktik</span></div>
+        <div class="meta"><span>1.0.8</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/mixtape-mod-apk-1.jpg" alt="Mixtape" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+          <h3>Mixtape</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Musik</span></div>
+        <div class="meta"><span>1.9.5</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/School-Party-Craft-MOD-APK-2.jpg" alt="School Party Craft" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+          <h3>School Party Craft</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Simulasi</span></div>
+        <div class="meta"><span>1.8.23</span><span>Gratis</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/duck-survival/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Duck-Survival-MOD-APK.jpg" alt="Duck Survival" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/duck-survival/" target="_blank" rel="noopener">
+          <h3>Duck Survival</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Taktik</span></div>
+        <div class="meta"><span>1.4.1</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/stickman-the-flash/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Stickman-The-Flash-mod-apk.webp" alt="Stickman The Flash" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/stickman-the-flash/" target="_blank" rel="noopener">
+          <h3>Stickman The Flash</h3>
+        </a>
+        <div class="categories"><span>Game</span></div>
+        <div class="meta"><span>1.78.26</span><span>Free</span></div>
+      </div>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Games Populer 🔥</h2>
+          <p>Game yang banyak dicari oleh pengguna.</p>
+        </div>
+        <a href="https://apkmodjoy.org/game/" target="_blank" rel="noopener">Lihat Semua</a>
+      </div>
+      <div class="popular-grid">
+        
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/dragon-village-3-mod-apk-3.jpg" alt="Dragon Village 3" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+          <h3>Dragon Village 3</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Taktik</span></div>
+        <div class="meta"><span>1.0.8</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/mixtape-mod-apk-1.jpg" alt="Mixtape" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+          <h3>Mixtape</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Musik</span></div>
+        <div class="meta"><span>1.9.5</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/School-Party-Craft-MOD-APK-2.jpg" alt="School Party Craft" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+          <h3>School Party Craft</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Simulasi</span></div>
+        <div class="meta"><span>1.8.23</span><span>Gratis</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/duck-survival/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Duck-Survival-MOD-APK.jpg" alt="Duck Survival" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/duck-survival/" target="_blank" rel="noopener">
+          <h3>Duck Survival</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Taktik</span></div>
+        <div class="meta"><span>1.4.1</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/stickman-the-flash/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Stickman-The-Flash-mod-apk.webp" alt="Stickman The Flash" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/stickman-the-flash/" target="_blank" rel="noopener">
+          <h3>Stickman The Flash</h3>
+        </a>
+        <div class="categories"><span>Game</span></div>
+        <div class="meta"><span>1.78.26</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="grid-card">
+      <a class="grid-image" href="https://apkmodjoy.org/robbery-bob/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Robbery-Bob-Mod-APK-3.jpeg" alt="Robbery Bob" loading="lazy">
+      </a>
+      <div class="grid-copy">
+        <a href="https://apkmodjoy.org/robbery-bob/" target="_blank" rel="noopener">
+          <h3>Robbery Bob</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Aksi</span></div>
+        <div class="meta"><span>1.35.1</span><span>Free</span></div>
+      </div>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Apps Populer</h2>
+          <p>Aplikasi Android pilihan dari APKMODJOY.</p>
+        </div>
+        <a href="https://apkmodjoy.org/app/" target="_blank" rel="noopener">Lihat Semua</a>
+      </div>
+      <div class="apps-grid">
+        
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/netshort/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/NetShort-mod-apk-logo.webp" alt="NetShort" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/netshort/" target="_blank" rel="noopener">
+          <h3>NetShort</h3>
+        </a>
+        <div class="categories"><span>Aplikasi</span><span>Hiburan</span></div>
+        <div class="meta"><span>2.2.2</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/loklok-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/unnamed-29.webp" alt="Loklok MOD APK" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/loklok-mod-apk/" target="_blank" rel="noopener">
+          <h3>Loklok MOD APK</h3>
+        </a>
+        <div class="categories"><span>Aplikasi</span><span>Hiburan</span></div>
+        <div class="meta"><span>v3.23.0</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/viu-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/viu-mod-apk-logo-300x300.png" alt="Viu MOD APK" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/viu-mod-apk/" target="_blank" rel="noopener">
+          <h3>Viu MOD APK</h3>
+        </a>
+        <div class="categories"><span>Aplikasi</span><span>Hiburan</span></div>
+        <div class="meta"><span>2.25.1</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/download-smule-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/smule-logo-300x300.png" alt="Smule MOD APK" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/download-smule-mod-apk/" target="_blank" rel="noopener">
+          <h3>Smule MOD APK</h3>
+        </a>
+        <div class="categories"><span>Aplikasi</span><span>Musik &amp; Audio</span></div>
+        <div class="meta"><span>12.9.5</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/omi-premium-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/omi-mod-apk-8-300x300.webp" alt="Omi Premium MOD APK" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/omi-premium-mod-apk/" target="_blank" rel="noopener">
+          <h3>Omi Premium MOD APK</h3>
+        </a>
+        <div class="categories"><span>Aplikasi</span><span>Sosial</span></div>
+        <div class="meta"><span>v7.55.0</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/youtube-premium-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/youtube-4179-150.jpg" alt="Youtube Premium Mod APK" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/youtube-premium-mod-apk/" target="_blank" rel="noopener">
+          <h3>Youtube Premium Mod APK</h3>
+        </a>
+        <div class="categories"><span>Aplikasi</span><span>Hiburan</span></div>
+        <div class="meta"><span>21.15.285</span><span>Full Pro/Premium Unlocked</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/dragon-village-3-mod-apk-logo-300x300.png" alt="Dragon Village 3" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+          <h3>Dragon Village 3</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Taktik</span></div>
+        <div class="meta"><span>1.0.8</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/mixtape-mod-apk-300x300.png" alt="Mixtape" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+          <h3>Mixtape</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Musik</span></div>
+        <div class="meta"><span>1.9.5</span><span>Free</span></div>
+      </div>
+    </article>
+    
+    <article class="app-card">
+      <a class="app-icon" href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/School-Party-Craft-MOD-APK-300x300.jpg" alt="School Party Craft" loading="lazy">
+      </a>
+      <div class="app-copy">
+        <a href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+          <h3>School Party Craft</h3>
+        </a>
+        <div class="categories"><span>Game</span><span>Simulasi</span></div>
+        <div class="meta"><span>1.8.23</span><span>Gratis</span></div>
+      </div>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Game Terbaru</h2>
+          <p>Pembaruan game yang baru ditambahkan.</p>
+        </div>
+        <a href="https://apkmodjoy.org/game/" target="_blank" rel="noopener">Lihat Semua</a>
+      </div>
+      <div class="updates-track">
+        
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/dragon-village-3/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/dragon-village-3-mod-apk-logo-300x300.png" alt="Dragon Village 3" loading="lazy">
+        <h3>Dragon Village 3</h3>
+        <p>Game • Taktik</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/mixtape/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/mixtape-mod-apk-300x300.png" alt="Mixtape" loading="lazy">
+        <h3>Mixtape</h3>
+        <p>Game • Musik</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/school-party-craft/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/School-Party-Craft-MOD-APK-300x300.jpg" alt="School Party Craft" loading="lazy">
+        <h3>School Party Craft</h3>
+        <p>Game • Simulasi</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/duck-survival/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Duck-Survival-mod-apk-logo.webp" alt="Duck Survival" loading="lazy">
+        <h3>Duck Survival</h3>
+        <p>Game • Taktik</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/stickman-the-flash/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/06/Stickman-The-Flash-mod-apk-logo-300x300.webp" alt="Stickman The Flash" loading="lazy">
+        <h3>Stickman The Flash</h3>
+        <p>Game</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/robbery-bob/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Robbery-Bob-MOD-Apk-lo-go-300x300.webp" alt="Robbery Bob" loading="lazy">
+        <h3>Robbery Bob</h3>
+        <p>Game • Aksi</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/farlight-84/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Farlight-84-Mod-APK-logo-300x300.webp" alt="Farlight 84" loading="lazy">
+        <h3>Farlight 84</h3>
+        <p>Game • Aksi</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/moy-7/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Moy-7-logo.webp" alt="Moy 7" loading="lazy">
+        <h3>Moy 7</h3>
+        <p>Aksi • Game</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/prime-rush/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Prime-Rush-logo.webp" alt="Prime Rush" loading="lazy">
+        <h3>Prime Rush</h3>
+        <p>Game • Aksi</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/onsen-and-girls/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/Onsen-and-Girls-logo.webp" alt="Onsen and Girls" loading="lazy">
+        <h3>Onsen and Girls</h3>
+        <p>Game • Permainan peran</p>
+      </a>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Aplikasi Terbaru</h2>
+          <p>Pembaruan aplikasi terbaru dari situs utama.</p>
+        </div>
+        <a href="https://apkmodjoy.org/app/" target="_blank" rel="noopener">Lihat Semua</a>
+      </div>
+      <div class="updates-track">
+        
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/netshort/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/NetShort-mod-apk-logo.webp" alt="NetShort" loading="lazy">
+        <h3>NetShort</h3>
+        <p>Aplikasi • Hiburan</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/loklok-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/unnamed-29.webp" alt="Loklok MOD APK" loading="lazy">
+        <h3>Loklok MOD APK</h3>
+        <p>Aplikasi • Hiburan</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/viu-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/viu-mod-apk-logo-300x300.png" alt="Viu MOD APK" loading="lazy">
+        <h3>Viu MOD APK</h3>
+        <p>Aplikasi • Hiburan</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/download-smule-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/smule-logo-300x300.png" alt="Smule MOD APK" loading="lazy">
+        <h3>Smule MOD APK</h3>
+        <p>Aplikasi • Musik &amp; Audio</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/omi-premium-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/05/omi-mod-apk-8-300x300.webp" alt="Omi Premium MOD APK" loading="lazy">
+        <h3>Omi Premium MOD APK</h3>
+        <p>Aplikasi • Sosial</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/youtube-premium-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/youtube-4179-150.jpg" alt="Youtube Premium Mod APK" loading="lazy">
+        <h3>Youtube Premium Mod APK</h3>
+        <p>Aplikasi • Hiburan</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/vpn-super-unlimited-proxy-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/vpn-super-proxy-proxy-master-logo-300x300.jpg" alt="VPN Super Unlimited Proxy MOD APK" loading="lazy">
+        <h3>VPN Super Unlimited Proxy MOD APK</h3>
+        <p>Aplikasi • Alat</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/spotify-premium-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/Spotify-Mod-APK-4-150x150-1.jpg" alt="Spotify Premium Mod APK" loading="lazy">
+        <h3>Spotify Premium Mod APK</h3>
+        <p>Aplikasi • Musik &amp; Audio</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/capcut-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/capcut-video-editor-thumbnail-150.jpg" alt="CapCut MOD APK" loading="lazy">
+        <h3>CapCut MOD APK</h3>
+        <p>Aplikasi • Foto &amp; Video</p>
+      </a>
+    </article>
+    
+    <article class="update-card">
+      <a href="https://apkmodjoy.org/bling2-live-mod-apk/" target="_blank" rel="noopener">
+        <img src="https://apkmodjoy.org/wp-content/uploads/2026/04/Bling2-Mod-APK-4-150x150-1.jpg" alt="Bling2 Live Mod APK" loading="lazy">
+        <h3>Bling2 Live Mod APK</h3>
+        <p>Aplikasi • Hiburan</p>
+      </a>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about">
+      <h2>Tentang APKMODJOY</h2>
+      <p>APKMODJOY adalah platform informasi game dan aplikasi Android untuk pengguna Indonesia. Halaman GitHub Pages ini berfungsi sebagai halaman pengenalan thương hiệu dan mengarahkan pengguna ke konten lengkap di website utama.</p>
+      <div class="about-links">
+        <a href="https://apkmodjoy.org/" target="_blank" rel="noopener">Website</a>
+        <a href="https://www.facebook.com/apkmodjoy.org1" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.youtube.com/@JoyApkmod" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/apkmodjoyorg" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/apkmodjoyorg" target="_blank" rel="noopener">X</a>
+        <a href="https://t.me/apkmodjoyorg" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>APKMODJOY</h3>
+      <p>Portal informasi game dan aplikasi Android dengan tautan langsung menuju website utama APKMODJOY.</p>
+    </div>
+    <div>
+      <h3>Tautan</h3>
+      <ul>
+        <li><a href="https://apkmodjoy.org/" target="_blank" rel="noopener">Beranda</a></li>
+        <li><a href="https://apkmodjoy.org/game/" target="_blank" rel="noopener">Game</a></li>
+        <li><a href="https://apkmodjoy.org/app/" target="_blank" rel="noopener">Aplikasi</a></li>
+        <li><a href="https://apkmodjoy.org/topics/" target="_blank" rel="noopener">Topics</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Kontak</h3>
+      <p>Email: contact@apkmodjoy.org</p>
+      <p>Telepon: +62 878-3395-9016</p>
+      <p>Jakarta, Indonesia</p>
+    </div>
+  </div>
+  <div class="copyright">© 2026 APKMODJOY. Semua tautan konten mengarah ke apkmodjoy.org.</div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
